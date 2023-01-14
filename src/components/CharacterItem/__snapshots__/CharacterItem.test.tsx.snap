@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterItem component should render properly 1`] = `
+<div
+  data-testid="characterItem"
+  onClick={[Function]}
+>
+  <div
+    className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-qlmfal-MuiPaper-root-MuiCard-root"
+  >
+    <div
+      className="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+    >
+      <div
+        className="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+      >
+        <span
+          className="MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-1qvr50w-MuiTypography-root"
+        >
+          Gender - Male
+        </span>
+        <span
+          className="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader css-nrdprl-MuiTypography-root"
+        >
+          Location Test location
+        </span>
+      </div>
+    </div>
+    <button
+      className="MuiButtonBase-root MuiCardActionArea-root css-b6lsxj-MuiButtonBase-root-MuiCardActionArea-root"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <img
+        alt="green iguana"
+        className="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+        height="140"
+        src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+      />
+      <div
+        className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+      >
+        <div
+          className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+        >
+          Rick Sanchez
+        </div>
+      </div>
+      <span
+        className="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
+      />
+    </button>
+  </div>
+</div>
+`;
