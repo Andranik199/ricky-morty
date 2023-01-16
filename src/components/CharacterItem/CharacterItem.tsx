@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardActionArea, CardContent, CardHeader, CardMedia, Typography } from '@mui/material';
 import { Character, Status } from 'store/characters/characters.slice';
 import { GiDeathSkull } from 'react-icons/gi';
+import styles from './CharacterItem.module.scss';
 
 type CharacterItemProps = {
     item: Character;
@@ -15,11 +16,7 @@ export const CharacterItem: React.FC<CharacterItemProps> = ({ item, handleSelect
     <div data-testid='characterItem' onClick={handleClick}>
       <Card
         key={item.id}
-        sx={{
-          maxWidth: 250,
-          flex: '1 0 21%',
-          margin: '5px',
-        }}>
+        className={styles.card}>
         <CardHeader
           avatar={
             item.status === Status.DEAD && <GiDeathSkull/>

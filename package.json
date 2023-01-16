@@ -2,6 +2,9 @@
   "name": "ricky-and-morty",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "<=14.19.1"
+  },
   "dependencies": {
     "@apollo/client": "^3.7.3",
     "@emotion/react": "^11.10.5",
@@ -19,7 +22,9 @@
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
     "apollo-upload-client": "^17.0.0",
+    "autoprefixer": "8",
     "cross-env": "^7.0.3",
+    "css-loader": "^3.0.0",
     "eslint": "8.22.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.32.0",
@@ -27,6 +32,8 @@
     "jest": "^28.1.1",
     "jest-config": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
+    "mini-css-extract-plugin": "^0.4.4",
+    "postcss-loader": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
@@ -34,10 +41,13 @@
     "react-scripts": "5.0.1",
     "react-test-renderer": "^18.2.0",
     "sass": "^1.57.1",
+    "sass-loader": "^7.1.0",
     "ts-jest": "^28.0.2",
-    "typed-scss-modules": "^7.0.2",
     "typescript": "^4.9.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-import-glob-loader": "^1.6.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -45,6 +55,7 @@
     "test": "cross-env NODE_ENV=test BABEL_ENV=test ./node_modules/.bin/jest --env=jsdom",
     "test:coverage": "npm test -- --coverage --watchAll=false",
     "eject": "react-scripts eject",
+    "css:modules": "webpack --quiet --info false -p --config ./webpack.css_modules.js || echo '1'",
     "eslint": "eslint -c .eslintrc.js --quiet --ext .ts --ext .tsx --ext .js --ext .jsx src"
   },
   "eslintConfig": {

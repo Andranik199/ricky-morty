@@ -2,7 +2,7 @@ import React from 'react';
 import { Avatar, Drawer, List, ListItem, Typography } from '@mui/material';
 import { useAppSelector } from 'store';
 import { charactersSelectors } from 'store/characters/config';
-// @ts-ignore
+
 import styles from './CharacterInfo.module.scss';
 
 export type CharacterInfo = {
